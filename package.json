@@ -1,0 +1,22 @@
+{
+  "name": "solve-leetcode-problems",
+  "version": "1.0.0",
+  "description": "This file file serves as your book's preface, a great place to describe your book's content and ideas.",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-numbered-headings-for-web-and-books": "^0.1.0",
+    "gitbook-plugin-fontsettings": "^2.0.0",
+    "gitbook-plugin-numbered-headings": "^1.1.1",
+    "gitbook-plugin-toggle-chapters": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.gitbook.com/jeantimex/solve-leetcode-problems.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
