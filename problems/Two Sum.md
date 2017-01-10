@@ -13,7 +13,7 @@ return [0, 1].
 ```
 The return format had been changed to zero-based indices. Please read the above updated description carefully.
 
-**Solution:**
+**Solution - Java:**
 ```java
 public class Solution {
   public int[] twoSum(int[] nums, int target) {
@@ -35,4 +35,28 @@ public class Solution {
     return new int[]{-1, -1};
   }
 }
+```
+
+**Solution - JavaScript:**
+```javascript
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+  var i, map = {};
+    
+  for (i = 0; i < nums.length; i++) {
+    var key = target-nums[i];
+        
+    if (key in map && i != map[key]) {
+      return [i, map[key]];
+    }
+        
+    map[nums[i]] = i;
+  }
+    
+  return [-1, -1];
+};
 ```
