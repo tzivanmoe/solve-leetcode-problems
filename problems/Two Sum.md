@@ -13,6 +13,13 @@ return [0, 1].
 ```
 The return format had been changed to zero-based indices. Please read the above updated description carefully.
 
+**The idea**
+
+We should be able to find the two numbers by scanning the array once (from left to right). We use a hashmap to store the `value:index` for each number, at `i-th` position, we check if the value of `target - nums[i]` exsists in the hashmap and they have different positions.
+
+Time complexity: `O(n)`<br />
+Space complexity: `O(n)`
+
 **Solution - Java:**
 ```java
 public class Solution {
