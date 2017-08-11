@@ -52,3 +52,36 @@ public class Solution {
   }
 }
 ```
+
+# Check Univalue Tree
+
+**Solution:**
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+  public boolean isUnivalTree(TreeNode root) {
+    if (root == null)
+      return false;
+    
+    return helper(root, root.val);
+  }
+  
+  boolean helper(TreeNode root, in val) {
+    if (root == null)
+      return true;
+      
+    if ((root.left != null && root.left.val != val) || (root.right != null && root.right.val != val))
+      return false;
+      
+    return helper(root.left, val) && helper(root.right, val);
+  }
+}
+```
