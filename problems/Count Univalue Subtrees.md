@@ -78,7 +78,7 @@ public class Solution {
     if (root == null)
       return true;
       
-    if ((root.left != null && root.left.val != val) || (root.right != null && root.right.val != val))
+    if (root.val != val)
       return false;
       
     return helper(root.left, val) && helper(root.right, val);
